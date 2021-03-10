@@ -1,0 +1,27 @@
+.detail{
+    background-color: #3A42FF;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 3px;
+}
+
+.leagueDetails{
+    text-align: left;
+    color: #fff;
+    padding: 10px 20px;
+}
+.leagueImage{
+  
+}
+.leagueImage img{
+width: 401px;
+height: 250px;
+float: right;
+padding: 5px;
+}
+@media screen and (max-width: 560px) {
+    .leagueDetails{
+        text-align: center;
+    }
+  }
