@@ -6,20 +6,22 @@ import { faCoffee, faLaptop } from '@fortawesome/free-solid-svg-icons'
 import Header from './components/Header/Header';
 import League from './components/League/League';
 import LeagueDetail from './components/LeagueDetail/LeagueDetail';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
       <div className="container">
-        <div className="row">
+        {/* <div className="row">
           <League></League>
           <League></League>
           <League></League>
-        </div>
+        </div> */}
         <LeagueDetail></LeagueDetail>
       </div>
       <br/>
+      <Footer></Footer>
     </div>
   );
 }

@@ -1,27 +1,49 @@
 .detail{
-    background-color: #3A42FF;
+    background-color: crimson;
     width: 100%;
     border-radius: 20px;
     padding: 10px;
     margin-left: 3px;
 }
-
 .leagueDetails{
     text-align: left;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
-.leagueImage{
-  
+.leagueDetails h2{
+    font-weight: bold;
+}
+.leagueDetails p{
+    font-weight: bold;
+}
+.leagueDetails p img{
+    width: 25px;
+    margin-right: 4px;
 }
 .leagueImage img{
 width: 401px;
-height: 250px;
+height: 255px;
 float: right;
-padding: 5px;
+padding: 5px 0;
+margin-top: 3px;
+}
+.description{
+    margin-top: 20px;
+    text-align: justify;
+}
+.description p{
+    font-size: 1.3em;
+    padding: 25px 10px;
+}
+.socialIcon{
+    text-align: center;
+}
+.socialIcon img{
+    width: 80px;
+    padding: 10px 10px;
 }
 @media screen and (max-width: 560px) {
     .leagueDetails{
-        text-align: center;
+        margin-left: 30px;
     }
   }

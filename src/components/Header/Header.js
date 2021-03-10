@@ -4,7 +4,7 @@ const Header = () => {
     return (
         
             <div className="header">
-                <h2>Just Leauge</h2>
+                <h2>International Premire League</h2>
             </div>
        
     );
