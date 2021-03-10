@@ -17,4 +17,6 @@
 .card-height{
     height: 390px;
     margin-bottom: 30px;
+    border: none;
+    box-shadow: 2px 13px 21px rgb(214, 214, 214);
 }
