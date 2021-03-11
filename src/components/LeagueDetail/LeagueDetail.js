@@ -45,9 +45,9 @@ const LeagueDetail = (props) => {
                 <p>{strDescriptionEN}</p>
                 <p>{strDescriptionES}</p>
                 <div className="socialIcon">
-                    <a href={'https://' + strFacebook}><img src={FacebookIcon} alt="facebook"/></a>
-                    <a href={'https://' + strYoutube}><img src={YoutubeIcon} alt="youtube"/></a>
-                    <a href={'https://' + strTwitter}><img src={TwitterIcon} alt="twitter"/></a>
+                    <a href={'https://' + strFacebook} target="_blank"><img src={FacebookIcon} alt="facebook"/></a>
+                    <a href={'https://' + strYoutube} target="_blank"><img src={YoutubeIcon} alt="youtube"/></a>
+                    <a href={'https://' + strTwitter} target="_blank"><img src={TwitterIcon} alt="twitter"/></a>
                 </div>
             </div>
         </div>
