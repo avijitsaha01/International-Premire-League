@@ -15,16 +15,16 @@ import { useParams } from 'react-router';
 
 const LeagueDetail = (props) => {
     const { id } = useParams()
-    const {LeagueDetails, setLeagueDetails} = props
+    const {LeagueDetails, setLeagueDetails} = props;
 
     useEffect(() => {
         const url = `https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setLeagueDetails(data.leagues[0]))
-    }, []);
+    }, [id]);
 
-    const { strCountry, strGender, strLeague, strSport, dateFirstEvent, strDescriptionEN, strDescriptionES } = LeagueDetails
+    const { strCountry, strGender, strLeague, strSport, dateFirstEvent, strDescriptionEN, strDescriptionES, strTwitter, strYoutube, strFacebook} = LeagueDetails
     return (
         <div>
             <div className="detail row">
@@ -45,9 +45,9 @@ const LeagueDetail = (props) => {
                 <p>{strDescriptionEN}</p>
                 <p>{strDescriptionES}</p>
                 <div className="socialIcon">
-                    <img src={FacebookIcon} alt="facebook" />
-                    <img src={YoutubeIcon} alt="youtube" />
-                    <img src={TwitterIcon} alt="twitter" />
+                    <a href={'https://' + strFacebook}><img src={FacebookIcon} alt="facebook"/></a>
+                    <a href={'https://' + strYoutube}><img src={YoutubeIcon} alt="youtube"/></a>
+                    <a href={'https://' + strTwitter}><img src={TwitterIcon} alt="twitter"/></a>
                 </div>
             </div>
         </div>
