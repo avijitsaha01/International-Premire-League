@@ -21,7 +21,7 @@ const LeagueDetail = (props) => {
         const url = `https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${id}`;
         fetch(url)
             .then(res => res.json())
-            .then(data => setLeagueDetails(data.leagues[0]))
+            .then(data => setLeagueDetails(data.leagues[0]));
     }, [id]);
 
     const { strCountry, strGender, strLeague, strSport, dateFirstEvent, strDescriptionEN, strDescriptionES, strTwitter, strYoutube, strFacebook} = LeagueDetails
