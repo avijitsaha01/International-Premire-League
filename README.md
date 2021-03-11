@@ -3,8 +3,8 @@
 This is a Project Under Programming Hero Assignment
 
 ## Feature
-<li> You Can see The most populer League Here.<li>
-<li>You can gather Information of League that you want.<li>
+<li> <h4>You Can see The most populer League Here. </h4></li>
+<li> <h4>You can gather Information of League that you want. </h4></li>
 
 ### Live-Link
 Live-Link here: 
