@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 
 import FacebookIcon from '../../assets/Icon/facebook.png';
 import YoutubeIcon from '../../assets/Icon/youtube.png';

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Header.css';
-import banner from '../../assets/images/h-back.jpg'
 import { Link } from 'react-router-dom';
 const Header = (props) => {
     const { strBadge } = props.LeagueDetails;
