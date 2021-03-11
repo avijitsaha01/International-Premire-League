@@ -9,15 +9,12 @@ import FootballIcon from '../../assets/Icon/football.png';
 import FoundIcon from '../../assets/Icon/found.png';
 import ImageMale from '../../assets/images/male.png';
 import ImageFemale from '../../assets/images/female.png';
-
 import './LeagueDetail.css';
 import { useParams } from 'react-router';
 
 
 const LeagueDetail = () => {
-
     const { id } = useParams()
-
     const [LeagueDetails, setLeagueDetails] = useState({});
 
     useEffect(() => {
@@ -40,21 +37,17 @@ const LeagueDetail = () => {
                 </div>
                 <div className="leagueImage col-md-6">
                     {
-                        strGender === 'Male' ? <img src={ImageMale} alt=""/>:<img src={ImageFemale} alt=""/>
+                        strGender === 'Male' ? <img src={ImageMale} alt="" /> : <img src={ImageFemale} alt="" />
                     }
                 </div>
             </div>
             <div className="description">
                 <p>{strDescriptionEN}</p>
-
                 <p>{strDescriptionES}</p>
                 <div className="socialIcon">
-
                     <img src={FacebookIcon} alt="facebook" />
                     <img src={YoutubeIcon} alt="youtube" />
                     <img src={TwitterIcon} alt="twitter" />
-
-
                 </div>
             </div>
         </div>
