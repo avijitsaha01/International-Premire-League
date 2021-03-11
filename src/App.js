@@ -23,21 +23,21 @@ function App() {
       .then(res => res.json())
       .then(data => setLeagues(data.leagues))
   }, [])
-
+  const [LeagueDetails, setLeagueDetails] = useState({});
   return (
     <Router>
       <div className="App">
-        <Header></Header>
+        <Header LeagueDetails={LeagueDetails}></Header>
         <div className="container">
           <div className="row">
             <Switch>
               <Route exact path="/">
                 {
-                  Leagues.slice(Math.ceil(Math.random() * 10), 15).map(data => <League data={data}></League>)
+                  Leagues.slice(0, 12).map(data => <League data={data}></League>)
                 }
               </Route>
               <Route path="/details/:id">
-                <LeagueDetail></LeagueDetail>
+                <LeagueDetail LeagueDetails={LeagueDetails} setLeagueDetails={setLeagueDetails}></LeagueDetail>
               </Route>
               <Route path="*">
                 <NotFound></NotFound>

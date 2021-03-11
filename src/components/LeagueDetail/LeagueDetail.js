@@ -13,9 +13,9 @@ import './LeagueDetail.css';
 import { useParams } from 'react-router';
 
 
-const LeagueDetail = () => {
+const LeagueDetail = (props) => {
     const { id } = useParams()
-    const [LeagueDetails, setLeagueDetails] = useState({});
+    const {LeagueDetails, setLeagueDetails} = props
 
     useEffect(() => {
         const url = `https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${id}`;
@@ -24,7 +24,7 @@ const LeagueDetail = () => {
             .then(data => setLeagueDetails(data.leagues[0]))
     }, [id]);
 
-    const { strCountry, strGender, strLeague, strSport, dateFirstEvent, strBadge, strDescriptionEN, strDescriptionES } = LeagueDetails
+    const { strCountry, strGender, strLeague, strSport, dateFirstEvent, strDescriptionEN, strDescriptionES } = LeagueDetails
     return (
         <div>
             <div className="detail row">

@@ -31,7 +31,6 @@ const League = (props) => {
         <div className="card-body">
           <h3 className="card-title">{strLeague}</h3>
           <p className="card-text">Sports Type: {strSport}</p>
-          <p className="card-text">Sports Type: {strSport}</p>
         </div>
         <div className="card-footer border-0 bg-white">
           <button onClick={() => showDetails(idLeague)} className="btn-explore btn">Explore
